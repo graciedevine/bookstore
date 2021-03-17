@@ -4,9 +4,9 @@ def index(request):
     """The home page for Paperbacks Ink."""
     return render(request, 'paperbacks_ink/index.html')
 
-def about(request):
+def events(request):
     """Shows About page."""
-    return render(request, 'paperbacks_ink/about.html')
+    return render(request, 'paperbacks_ink/events.html')
 
 def kaffee(request):
     """Shows Kaffee Kultur page."""

@@ -1,8 +1,26 @@
-<p>
-    <a href="{% url 'paperbacks_ink:index' %}">Paperbacks Ink</a> -
-    <a href="{% url 'paperbacks_ink:about' %}">About</a> -
-    <a href="{% url 'paperbacks_ink:kaffee' %}">Kaffee Kultur</a> -
-    <a href="{% url 'paperbacks_ink:contact' %}">Contact Us</a>
-</p>
+{% load bootstrap4 %}
 
-{% block content %}{% endblock content %}
+<!doctype html>
+<html lang="en">
+    <head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
+        <a class="navbar-brand href="{% url 'paperbacks_ink:index' %}">Paperbacks Ink</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'paperbacks_ink:events' %}">
+                        Events</a></li>
+            </ul>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1,
+          shrink-to-fit=no">
+          <title>Paperbacks Ink</title>
+
+          {% bootstrap_css %}
+          {% bootstrap_javascript jquery='full' %}
+    </head>
