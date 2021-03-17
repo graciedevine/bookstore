@@ -1,0 +1,59 @@
+{% extends "paperbacks_ink/base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1>Location</h1>
+    <h2>9716 Warwick Blvd, Newport News 23601</h2>
+    
+    <h1>Hours</h1>
+    <h2>Sunday-Monday: Closed</h2>
+    <h2>Tuesday-Saturday: 8:00 am- 5:00 pm <h2>
+    
+    <h1>Contact Us</h1>
+    <h2>Phone: (757) 873-1211</h2>
+    <h2>Email: paperbacksinkva@gmail.com</h2>
+    
+    <title>Contact Us</title>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 30%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Paperbacks Ink
+        const paperbacks_ink = { lat: 37.02648, lng: -76.45509 };
+        // The map, centered at Paperbacks Ink
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 17,
+          center: paperbacks_ink,
+        });
+        // The marker, positioned at Paperbacks Ink
+        const marker = new google.maps.Marker({
+          position: paperbacks_ink,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOmH8ZrQ47TMtJLVp_4P4hXFlvcYQzlfk&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
+
+{% endblock content %}

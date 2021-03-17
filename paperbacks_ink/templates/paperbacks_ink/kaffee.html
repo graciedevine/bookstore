@@ -1,0 +1,16 @@
+{% extends "paperbacks_ink/base.html" %}
+
+{% block content %}
+
+<title>Kaffee Kultur</title>
+<p>We proudly serve:</p>
+
+{% load static %}
+<img src= "{% static 'discover_teas.png' %}">
+<a href="https://www.discoverteas.com/">Discover Teas</a>
+
+{% load static %}
+<img src= "{% static 'norfolk.jpg' %}" width="200" height="200">
+<a href="https://www.norfolkcoffeeandtea.com/">Norfolk Coffee & Tea Co.</a>
+
+{% endblock content %}
