@@ -5,7 +5,7 @@ def index(request):
     return render(request, 'paperbacks_ink/index.html')
 
 def events(request):
-    """Shows About page."""
+    """Shows Events page."""
     return render(request, 'paperbacks_ink/events.html')
 
 def kaffee(request):

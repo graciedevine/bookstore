@@ -1,51 +1,46 @@
 {% extends "paperbacks_ink/base.html" %}
 
-{% block content %}
+{% block page_header %}
+  <div class="jumbotron" style="text-align: center;">
+     <h1 class="display-4">If I'm ever stranded, let it be in a bookstore!</h1>
 
-<title>Paperbacks Ink</title>
+     {% load static %}
+     <img src= "{% static 'store_front.jpg' %}" style="margin: 25px 25px 10px 10px;" width="700" height="500">
 
-<h1>Paperbacks Ink</h1>
+     <p class="lead">Since 1982, Paperbacks Ink has been buying and trading used paperbook books in Hampton Roads.
+      Don't just come in to browse our selection of over 50,000 titles that turn over daily. We also proudly brew drinks from
+      fellow small businesses, Discover Tea and Norfolk Coffee & Tea Co. Every month we have different themed drinks, as well as craft
+      nights and book signings with local authors. Come by to see us or check out <a href="https://www.facebook.com/paperbacksink/">our Facebook page</a> to see
+      what's currently happening.</p>
 
-<h2>If I'm ever stranded, let it be in a bookstore!</h2>
 
-<p>We are a used paperback bookstore who trades and sells used papaerback books.
-   Paperbacks Ink has been part of the Hampton Roads community since 1982.</p>
-
-<p>Don't just come in to browse our selection of over 50,000 titles that turn over daily. We also proudly brew teas from
-    Discover Tea and coffee from Norfolk Coffee & Tea Co. Every month we have different themed drinks, as well as craft
-    nights and book signings with local authors.
-</p>
-
-   <p>Trade-in books get 25% of cover price - in store credit towards purchase of more books.</p>
-
-   <p>Used books sell for 50% of cover price.</p>
 
 {% load static %}
-<img src= "{% static 'kids_books.jpg' %}" width="200" height="200">
+<img src= "{% static 'women.jpg' %}" style="margin: 75px 10px 10px 10px;" width="450" height="450">
 
 {% load static %}
-<img src= "{% static 'store_front.jpg' %}" width="200" height="200">
+<img src= "{% static 'black_history.jpg' %}" style="margin: 75px 10px 10px 10px;" width="450" height="450">
 
 {% load static %}
-<img src= "{% static 'women.jpg' %}" width="200" height="200">
+<img src= "{% static 'childrens.jpg' %}" style="margin: 25px 10px 10px 10px;" width="450" height="400">
 
 {% load static %}
-<img src= "{% static 'black_history.jpg' %}" width="200" height="200">
+<img src= "{% static 'books_local.jpg' %}" style="margin: 25px 10px 10px 10px;" width="450" height="400">
 
 {% load static %}
-<img src= "{% static 'books.jpg' %}" width="200" height="200">
+<img src= "{% static 'customers.jpg' %}" style="margin: 25px 10px 10px 10px;" width="450" height="600">
 
 {% load static %}
-<img src= "{% static 'customers.jpg' %}" width="200" height="200">
+<img src= "{% static 'books.jpg' %}" style="margin: 25px 10px 10px 10px;" width="450" height="600">
 
 {% load static %}
-<img src= "{% static 'shelves_chair.jpg' %}" width="200" height="200">
+<img src= "{% static 'bernie.jpg' %}" style="margin: 25px 10px 10px 10px;" width="900" height="600">
 
 {% load static %}
-<img src= "{% static 'bernie.jpg' %}" width="200" height="200">
+<img src= "{% static 'shelves_chair.jpg' %}" style="margin: 25px 10px 25px 10px;" width="900" height="600">
 
-{% load static %}
-<img src= "{% static 'books_local.jpg' %}" width="200" height="200">
+  <h3>Trade-in books get 25% of cover price to be used as store credit towards the purchase of more books. We sell used books for 50% of cover price.</h3>
 
+</div>
 
-{% endblock content %}
+{% endblock page_header%}

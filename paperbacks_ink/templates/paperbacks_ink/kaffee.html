@@ -1,41 +1,27 @@
 {% extends "paperbacks_ink/base.html" %}
 
-{% block content %}
+{% block page_header %}
+  <div class="jumbotron" style="text-align: center;">
+    <h1 class="display-4">Enjoy some tea or coffee while you browse.</h1>
 
-<title>Kaffee Kultur</title>
-<h1>We proudly serve products from fellow local small businesses Discover Teas and Norfolk Coffee & Tea Co.</h1>
+    <p class="lead">We proudly serve products from our partners <a href="https://www.discoverteas.com/">Discover Teas</a> 
+        and <a href="https://www.norfolkcoffeeandtea.com/">Norfolk Coffee & Tea Co.</a></p>
+    
+    {% load static %}
+    <img src="{% static 'leprechaun.jpg' %}" style="margin: 50px 10px 10px 10px;" width="400" height="400">
 
-<h3><a href="https://www.discoverteas.com/">Discover Teas</a> carries a wide variety of high-quality teas,
-    tisanes, and herbs, as well as a selection of teaware for your steeping needs.</h3>
-{% load static %}
-<img src="{% static 'discover_teas.png' %}">
+    {% load static %}
+    <img src="{% static 'irish_latte.jpg' %}" style="margin: 50px 10px 10px 10px;" width="400" height="400">
 
-<h3>Since 1918 <a href="https://www.norfolkcoffeeandtea.com/">Norfolk Coffee & Tea Co.</a> has been roasting gourmet
-    coffees in Norfolk, VA. Their products are roasted and packed daily when ordered, to maintain the fresh coffee
-    bean flavors from roaster to cup.</h3>
-{% load static %}
-<img src="{% static 'norfolk.jpg' %}" width="200" height="200">
-
-
-<h2>Check <a href="https://www.facebook.com/paperbacksink/">our Facebook page</a> for weekly
-    or monthly specials.</h2>
+    <p class="lead">Check <a href="https://www.facebook.com/paperbacksink/">our Facebook page</a> for weekly
+        or monthly specials.</p>
 
 {% load static %}
-<img src="{% static 'leprechaun.jpg' %}" width="200" height="200">
+<img src="{% static 'valentines_drink.jpg' %}" style="margin: 25px 10px 10px 10px;" width="400" height="400">
 
 {% load static %}
-<img src="{% static 'irish_latte.jpg' %}" width="200" height="200">
+<img src="{% static 'jamaican.jpg' %}" style="margin: 25px 10px 10px 10px;" width="400" height="400">
 
-{% load static %}
-<img src="{% static 'valentines_drink.jpg' %}" width="200" height="200">
+</div>
 
-{% load static %}
-<img src="{% static 'jamaican.jpg' %}" width="200" height="200">
-
-{% load static %}
-<img src="{% static 'coffee_counter.jpg' %}" width="200" height="200">
-
-{% load static %}
-<img src="{% static 'coffee_entrance.jpg' %}" width="200" height="200">
-
-{% endblock content %}
+{% endblock page_header%}

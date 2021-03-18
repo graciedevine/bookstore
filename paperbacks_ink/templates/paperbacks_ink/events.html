@@ -1,37 +1,39 @@
 {% extends "paperbacks_ink/base.html" %}
 
-{% block content %}
+{% block page_header %}
+  <div class="jumbotron" style="text-align: center;">
+    <h1 class="display-4">Bring your friends or meet some of ours.</h1>
 
-<title>Events</title>
-<h1>Events</h1>
+    {% load static %}
+      <img src="{% static 'fairytale_day.jpg' %}" style="margin: 10px 10px 10px 10px;" width="450" height="450">
 
-<h2>We host craft nights, book signings, and book readings for children (among other literary events).</h2>
+    {% load static %}
+      <img src="{% static 'painting.jpg' %}" style="margin: 10px 10px 10px 10px;" width="450" height="450">
 
-<h2>Please check <a href="https://www.facebook.com/paperbacksink/">our Facebook page</a> first for current
-    event postings.</h2>
+    <p class="lead">Come out for one of our craft nights, book signings, read alouds for children, and other literary events!
+      Please check <a href="https://www.facebook.com/pg/paperbacksink/events/?ref=page_internal">our Facebook page</a> for current
+      event postings.
+    </p>
 
-{% load static %}
-<img src="{% static 'fairytale_day.jpg' %}" width="200" height="200">
+    {% load static %}
+    <img src="{% static 'author.jpg' %}" style="margin: 75px 10px 10px 10px;" width="900" height="450">
+    <p>Local author <a href="https://www.christopherrussellauthor.com/">Christopher Russell</a> signing copies of Rebirth in 2020.</p>
 
-{% load static %}
-<img src="{% static 'manuscripts.jpg' %}" width="200" height="200">
+    {% load static %}
+    <img src="{% static 'picture_board.jpg' %}" style="margin: 25px 10px 10px 10px;" width="500" height="500">
 
-{% load static %}
-<img src="{% static 'picture_board.jpg' %}" width="200" height="200">
+    {% load static %}
+    <img src="{% static 'string.jpg' %}" style="margin: 25px 10px 10px 10px;" width="500" height="500">
 
-{% load static %}
-<img src="{% static 'string_art.jpg' %}" width="200" height="200">
+    {% load static %}
+    <img src="{% static 'xmas_trees.jpg' %}" style="margin: 25px 10px 10px 10px;" width="800" height="700">
 
-{% load static %}
-<img src="{% static 'author.jpg' %}" width="400" height="200">
+    {% load static %}
+    <img src="{% static 'snowflakes.jpg' %}" style="margin: 25px 10px 10px 10px;" width="500" height="600">
 
-{% load static %}
-<img src="{% static 'painting.jpg' %}" width="200" height="200">
+    {% load static %}
+    <img src="{% static 'manuscripts.jpg' %}" style="margin: 25px 10px 10px 10px;" width="500" height="600">
 
-{% load static %}
-<img src="{% static 'snowflakes.jpg' %}" width="200" height="200">
+</div>
 
-{% load static %}
-<img src="{% static 'xmas_trees.jpg' %}" width="200" height="200">
-
-{% endblock content %}
+{% endblock page_header%}
