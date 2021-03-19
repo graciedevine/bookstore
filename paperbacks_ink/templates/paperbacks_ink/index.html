@@ -1,5 +1,6 @@
 {% extends "paperbacks_ink/base.html" %}
 
+<!-- Styling the home page using a jumbotron -->
 {% block page_header %}
   <div class="jumbotron" style="text-align: center;">
     <h1 class="display-4">If I'm ever stranded, let it be in a bookstore!</h1>
@@ -7,6 +8,7 @@
 
     {% load static %}
       <img src= "{% static 'store_front.jpg' %}" style="margin: 25px 45px 10px 10px;" width="700" height="500">
+    <!-- Load an image, define borders, define dimensions -->
 
     <p class="lead">Since 1982, Paperbacks Ink has been buying and trading used paperbook books in Hampton Roads.
       Don't just come in to browse our selection of over 50,000 titles that turn over daily. We also proudly brew drinks from
