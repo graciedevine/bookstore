@@ -1,4 +1,4 @@
 ll_env/
 _pycache_/
 *.sqlite3
-*.top_secret.py
+top_secret.py
