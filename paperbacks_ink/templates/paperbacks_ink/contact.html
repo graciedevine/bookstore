@@ -1,0 +1,75 @@
+
+
+{% extends "paperbacks_ink/base.html" %}
+
+{% block page_header %}
+  <div class="jumbotron" style="text-align: center;">
+    <h1 class="display-4">Contact Us</h1>
+
+    <p class="lead">We look forward to seeing you!</p>
+    
+    {% load static %}
+    <img src= "{% static 'store_outside.jpg' %}" style="margin: 25px 100px 50px 100px;" width="800" height="500">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <h2>Hours</h2>
+    <h3>Sunday-Monday: Closed</h3>
+    <h3>Tuesday-Saturday: 8:00 am- 5:00 pm </h3>
+      &nbsp;&nbsp;
+    
+    <h2>Get in touch</h2>
+    <h3>Phone: (757) 873-1211</h3>
+    <h3>Email: paperbacksinkva@gmail.com</h3>
+      &nbsp;&nbsp;
+    
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 50%;
+        /* The width is the width of the web page */
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Paperbacks Ink
+        const paperbacks_ink = { lat: 37.02648, lng: -76.45509 };
+        // The map, centered at Paperbacks Ink
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 17,
+          center: paperbacks_ink,
+        });
+        // The marker, positioned at Paperbacks Ink
+        const marker = new google.maps.Marker({
+          position: paperbacks_ink,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- API key has restricted use and can only be accessed from my IP address -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOmH8ZrQ47TMtJLVp_4P4hXFlvcYQzlfk&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+
+  &nbsp;&nbsp;
+  <h3>Address: 9716 Warwick Blvd, Newport News 23601</h3>
+</html>
+
+</div>
+
+{% endblock page_header%}

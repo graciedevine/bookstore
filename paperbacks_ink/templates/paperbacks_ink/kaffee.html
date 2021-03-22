@@ -1,0 +1,27 @@
+{% extends "paperbacks_ink/base.html" %}
+
+{% block page_header %}
+  <div class="jumbotron" style="text-align: center;">
+    <h1 class="display-4">Enjoy some tea or coffee while you browse.</h1>
+
+    <p class="lead">We proudly serve products from our partners <a href="https://www.discoverteas.com/">Discover Teas</a> 
+        and <a href="https://www.norfolkcoffeeandtea.com/">Norfolk Coffee & Tea Co.</a></p>
+    
+    {% load static %}
+    <img src="{% static 'leprechaun.jpg' %}" style="margin: 50px 10px 10px 10px;" width="400" height="400">
+
+    {% load static %}
+    <img src="{% static 'irish_latte.jpg' %}" style="margin: 50px 10px 10px 10px;" width="400" height="400">
+
+    <p class="lead">Check <a href="https://www.facebook.com/paperbacksink/">our Facebook page</a> for weekly
+        or monthly specials.</p>
+
+    {% load static %}
+    <img src="{% static 'valentines_drink.jpg' %}" style="margin: 25px 10px 10px 10px;" width="400" height="500">
+
+    {% load static %}
+    <img src="{% static 'jamaican.jpg' %}" style="margin: 25px 10px 10px 10px;" width="400" height="500">
+
+</div>
+
+{% endblock page_header%}
