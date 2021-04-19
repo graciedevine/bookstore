@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# SECRET_KEY = the_key
 SECRET_KEY = 'e8szx4^kck_gzkv5n8q%a1b6yix=#0txmii48xgq+=d%(hlo%3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -138,3 +139,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Heroku settings
 import django_heroku
 django_heroku.settings(locals())
+
+if os.environ.get('DEBUG') == 'TRUE':
+    DEBUG = True
+elif os.environ.get('DEBUG') == 'FALSE':
+    DEBUG = False
