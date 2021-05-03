@@ -1,29 +1,29 @@
-
-
 {% extends "paperbacks_ink/base.html" %}
 
 {% block page_header %}
-  <div class="jumbotron" style="text-align: center;">
-    <h1 class="display-4">Contact Us</h1>
+<div class="jumbotron" style="text-align: center;">
+  <h1 class="display-4">Contact Us</h1>
 
-    <p class="lead">We look forward to seeing you!</p>
-    
-    {% load static %}
-    <img src= "{% static 'store_outside.jpg' %}" style="margin: 25px 100px 50px 100px;" width="800" height="500">
+  <p class="lead">We look forward to seeing you!</p>
 
-<!DOCTYPE html>
-<html>
+  {% load static %}
+  <img src="{% static 'store_outside.jpg' %}" style="margin: 25px 100px 50px 100px;" width="800" height="500"
+    class="img-fluid">
+
+  <!DOCTYPE html>
+  <html>
+
   <head>
     <h2>Hours</h2>
     <h3>Sunday-Monday: Closed</h3>
     <h3>Tuesday-Saturday: 8:00 am- 5:00 pm </h3>
-      &nbsp;&nbsp;
-    
+    &nbsp;&nbsp;
+
     <h2>Get in touch</h2>
     <h3>Phone: (757) 873-1211</h3>
     <h3>Email: paperbacksinkva@gmail.com</h3>
-      &nbsp;&nbsp;
-    
+    &nbsp;&nbsp;
+
     <style type="text/css">
       /* Set the size of the div element that contains the map */
       #map {
@@ -54,6 +54,7 @@
       }
     </script>
   </head>
+
   <body>
     <!--The div element for the map -->
     <div id="map"></div>
@@ -62,13 +63,13 @@
     <!-- API key has restricted use and can only be accessed from my IP address -->
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOmH8ZrQ47TMtJLVp_4P4hXFlvcYQzlfk&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+      async></script>
   </body>
 
   &nbsp;&nbsp;
   <h3>Address: 9716 Warwick Blvd, Newport News 23601</h3>
-</html>
+
+  </html>
 
 </div>
 
