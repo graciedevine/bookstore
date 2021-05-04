@@ -1,8 +1,5 @@
 ll_env/
-<<<<<<< HEAD
 __pycache__/
-=======
 _pycache_/
->>>>>>> e4c94b290725799df214252e277437267a41de12
 *.sqlite3
 top_secret.py

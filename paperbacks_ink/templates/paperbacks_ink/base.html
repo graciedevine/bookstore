@@ -2,7 +2,6 @@
 
 <!doctype html>
 <html lang="en">
-<<<<<<< HEAD
 
 <head>
   <meta charset="utf-8">
@@ -67,67 +66,3 @@
 </body>
 
 </html>
-=======
-<head>
-  <meta charset="utf-8">
-  <meta name="viewpoint" content="width=device-width, initial-scale=1,
-    shrink-to-fit=no">
-    <title>Paperbacks Ink</title>
-    
-    {% bootstrap_css %}
-    <!-- tells Django to include all Bootstrap style files -->
-    {% bootstrap_javascript jquery='full' %}
-    <!-- enables all interactive behavior -->
-
-<!-- Defining the navigation bar -->
-</head>
-    <body>
-
-      <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
-      <!-- Navigation links will be Bootstrap styled -->
-
-        <a class="navbar-brand" href="{% url 'paperbacks_ink:index' %}">Paperbacks Ink</a>
-        <!-- Project's name appears at far left of navbar and links to homepage -->
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarCollapse" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span></button>
-        <!-- Defines button that appears if window is too narrow -->
-      
-      <!-- All of the links to the site's pages; will collapse on narrow screens -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'paperbacks_ink:events' %}">
-              Events</a></li>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'paperbacks_ink:kaffee' %}">
-              Kaffee Kultur</a></li>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-             <a class="nav-link" href="{% url 'paperbacks_ink:contact' %}">
-                Contact Us</a></li>
-        </ul>
-      </div>
-
-    </nav>
-
-    <!-- Defining the main parts of the page -->
-    <main role="main" class="container">
-      <div class="pb-2 mb-2 border-bottom">
-        {% block page_header %}{% endblock page_header %}
-      </div>
-      <div>
-        {% block content %}{% endblock content %}
-      </div>
-    </main>
-
-  </body>
-
-</html>
->>>>>>> e4c94b290725799df214252e277437267a41de12
-
