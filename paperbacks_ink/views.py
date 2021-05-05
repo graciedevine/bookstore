@@ -1,9 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render
 
 
 def index(request):
     """The home page for Paperbacks Ink."""
-    error = get_object_or_404()
     return render(request, "paperbacks_ink/index.html")
 
 
